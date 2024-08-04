@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+          <source src="background-video01.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+  <header>
+    <div class="logo-container">
+        <a href="#home">
+            <img src="logo.jpg" alt="Logo" class="logo">
+        </a>
+    </div>
+    <div class="container">
+      <h1 class="name">DHANUSH J</h1>
+      <nav>
+        <ul>
+          <li><a href="#home" class="nav-link"><h3>Home</h3></a></li>
+          <li><a href="#about" class="nav-link"><h3>About Me</h3></a></li>
+          <li><a href="#resume" class="nav-link"><h3>Resume</h3></a></li>
+          <li><a href="#projects" class="nav-link"><h3>Projects</h3></a></li>
+          <li><a href="#contact" class="nav-link"><h3>Contact</h3></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="sections-wrapper">
+    <section id="home" class="section home-section">
+        <div class="profile-image-container">
+          <img src="dhanu.PNG" alt="Profile Image" class="profile-image">
+        </div>
+        <div class="personal-info">
+          <h1>Hello!!! I am</h1>
+          <h1>Dhanush J</h1>
+          <h2 id="typing-animation">Computer Science and Engineer</h2>
+          <ul class="details">
+            <ul data-skill-before="Date of Birth:" data-skill-after="08 July, 2002"></ul>
+            <ul data-skill-before="Email:" data-skill-after="dhanushj191@gmail.com"></ul>
+            <ul data-skill-before="Address:" data-skill-after="Davanagere, Karnataka, India"></ul>
+            <ul data-skill-before="Phone Number:" data-skill-after="+91 9019939737"></ul>
+          </ul>
+ 
+        </div>
+      </section>
+    
+    <section id="about" class="section about-section">
+      <div class="section-content">
+        <h2>About Me</h2>
+        <p>Aspiring Computer Science Engineer with a solid foundation in programming and data field. Proficient in multiple programming languages, including Python, JavaScript with practical experience in database
+            management and web technologies. Strong problem-solving skills, a quick learner, and an effective team
+            player dedicated to continuous learning and innovation.</p>
+      </div>
+      
+      <h2>Education</h2>
+        <div class="education-item">
+          <h3>Bachelor's degree in Computer Science and Engineering</h3>
+          <p>Jain Institute of Technology, Davanagere, 2020-2024</p>
+          <p>CGPA = 8.39</p>
+        </div>
+        <div class="education-item">
+          <h3>Department of Pre-University in PCMC</h3>
+          <p>Mandaara Indp PU College, Bathi, Davanagere, 2018-2020</p>
+          <p>Percentage = 89.16%</p>
+        </div>
+        <div class="education-item">
+            <h3>Karnataka Secondary Education Examination Board</h3>
+            <p>Maganur Basappa High School,Davanagere, 2015-2018</p>
+            <p>Percentage = 85.92%</p>
+        </div> 
+        
+        <h2>Experience</h2>
+        <div class="experience-item">
+          <h3>Rove Labs Pvt Ltd</h3>
+          <h3>Applied Machine Learning with Data Science [Internship]</h3>
+          <p class="experience-dates">Sep 2023 – Oct 2023</p>
+          <p class="experience-description">As a new intern at Rove Labs, I’m immersed in the world of Machine Learning with Data Science, where my
+            focus is on optimizing project management. Utilizing tools like MS Excel, I have streamlined my workflow
+            and enhanced collaboration. Together, these tools enable us to push boundaries, innovate rapidly, and deliver
+            exceptional solutions that align with the ethos of Rove Labs.</p>
+        </div>
+
+    </section>
+    
+    <section id="resume" class="section resume-section">
+        <div class="resume-content">
+          <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li data-skill-before="Programming Languages:" data-skill-after="Python, JavaScript"></li>
+                <li data-skill-before="Databases:" data-skill-after="SQL [MySQL, PostgresSQL]"></li>
+                <li data-skill-before="Data Visualization:" data-skill-after="Power BI"></li>
+                <li data-skill-before="Big Data Processing:" data-skill-after="Hadoop, Spark, Kafka"></li>
+                <li data-skill-before="Frontend Development:" data-skill-after="HTML, CSS, JavaScript"></li>
+            </ul>
+            <ul class="skill">
+                <li>Machine Learning</li>
+                <li>Data Analysis, Data Science</li>
+                <li>MS Excel, MS Word</li>
+              </ul>
+          </div>
+          <div class="resume-download">
+            <h2>Resume</h2>
+            <a href="https://drive.google.com/file/d/1DYRpuTZ7dMPAv_lKSC0XkyQrQTIjWk7x/view?usp=drivesdk" target="_blank">Download My Resume</a>
+          </div>
+        </div>
+      </section>
+   
+      <section id="projects" class="section projects-section">
+        <div class="section-content">
+          <h2 class="pro">Projects</h2>
+          <div class="project" onclick="window.open('https://github.com/dhanushj8/AI-based-tool-for-Psoriasis-and-Leprosy-diagnosis/blob/main/main.py', '_blank');">
+            <div class="project-image">
+              <img src="proj01.jpg" alt="AI based tool for Psoriasis diagnosis">
+            </div>
+            <div class="project-info">
+              <h3>AI based tool for Psoriasis diagnosis using Skin images</h3>
+              <p>The AI-based tool for Psoriasis and Leprosy diagnosis employs the VGG16 deep learning model to
+                accurately diagnose skin conditions. This tool is developed using Python and utilizes libraries such as
+                TensorFlow and Keras for model implementation, along with OpenCV for image processing.</p>
+            </div>
+          </div>
+          <div class="project" onclick="window.open('https://github.com/dhanushj8/Heart-disease-detection/blob/main/heartdisease.ipynb', '_blank');">
+            <div class="project-image">
+              <img src="proj02.jpg" alt="Heart disease detection using Machine Learning">
+            </div>
+            <div class="project-info">
+              <h3>Heart disease detection using Machine Learning</h3>
+              <p>Heart disease detection: Using medical data and machine learning algorithms to analyze risk factors and
+                predict likelihood of heart disease occurrence.</p>
+            </div>
+          </div>
+          <div class="project" onclick="window.open('https://github.com/dhanushj8/Wine-Quality-prediction/blob/main/Wine_Quality.ipynb', '_blank');">
+            <div class="project-image">
+              <img src="proj03.jpg" alt="Wine Wine Quality prediction using Data Analysis and Machine Learning">
+            </div>
+            <div class="project-info">
+              <h3>Wine Wine Quality prediction using Data Analysis and Machine Learning</h3>
+              <p>Wine quality prediction utilizes data analysis to forecast the quality of wines based on various
+                factors, aiding in production and selection processes.</p>
+            </div>
+          </div>
+          <div class="project" onclick="window.open('https://github.com/dhanushj8/Dialog-Flow-Chat-Bot-App', '_blank');">
+            <div class="project-image">
+              <img src="proj04.jpg" alt="Dialog Flow Chat Bot App using MAD">
+            </div>
+            <div class="project-info">
+              <h3>Dialog Flow Chat Bot App using MAD</h3>
+              <p>DialogFlow Chat Bot: An AI-powered conversational interface enabling seamless interaction between users
+                and applications, facilitating tasks, inquiries, and support in a natural language format.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+    
+    <section id="contact" class="section contact-section">
+        <div class="contact-wrapper">
+          <div class="contact-site">
+            <h1>For more Projects</h1>
+            <h2>Visit the GitHub site....</h2>
+            <a href="https://github.com/dhanushj8" target="_blank" class="btn btn-primary py-3 px-5">View More Projects on GitHub</a>
+        </br>
+    </br>
+          </div>
+          <div class="contact-form">
+            <h2>Contact Me</h2></br>
+          </br>
+            <h2>Have a<span> Question? </span></br> 
+                <a href="https://forms.gle/yURm1V8WJ6Smd4196" target="_blank" class="btn btn-primary py-3 px-5">Click Here</a>
+            </h2>
+        </br>
+    </br>
+            <footer>
+                <ul class="social-links">
+                    <li><a href="https://www.instagram.com/dhanushj08/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/dhanushj08" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/dhanushj8" target="_blank" class="social-icon github"><i class="fab fa-github"></i> GitHub</a></li>
+                </ul>
+            </footer>
+        </br>
+        <footer class="site-footer">
+            <p>&copy; <span id="year"></span> Dhanush J. All rights reserved.</p>
+        </footer>
+
+        </div>
+        
+        </div>
+          </div>
+          
+        </div>
+    </section>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
